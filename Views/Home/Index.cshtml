@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>Projeto desenvolvido com o intuito de avaliar os conhecimentos adquiridos nas aulas de técnicas de programação</h2>
+    <div class="container-fluid p-2">
+        Projeto Desenvolvido pelo aluno: <strong>Douglas Muniz Silva </strong> RA: <strong>922104082</strong>
+    </div>
+    <div class="row p-2">
+        <div class="col-3 text-start bg-primary text-white p-4 m-2">
+            <h2>C# - Conceitos</h2>
+            <p>
+                O C# (pronuncia-se "C Sharp") é uma linguagem de programação moderna, orientada a objeto e fortemente tipada. O C# permite que os desenvolvedores criem muitos tipos de aplicativos seguros e robustos que são executados no .NET. O C# tem suas raízes na família de linguagens C e os programadores em C, C++, Java e JavaScript a reconhecerão imediatamente. Este tour dá uma visão geral dos principais componentes da linguagem em C# 8 e anterioe. Se quiser explorar a linguagem por meio de exemplos interativos, experimente os tutoriais de [Introdução à linguagem C#](https://learn.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/tutorials/).
+
+                C# é uma linguagem de programação orientada a objetos e ***orientada a componentes***. C# fornece construções de linguagem para dar suporte diretamente a esses conceitos, tornando C# uma linguagem natural para criação e uso de componentes de software. Desde sua origem, o C# adicionou recursos para dar suporte a novas cargas de trabalho e práticas emergentes de design de software. Em sua essência, o C# é uma linguagem ***orientada a objeto***. Você define os tipos e o comportamento deles.
+            </p>
+        </div>
+        <div class="col-4 text-start p-4 m-2">
+            <h2>Arquitetura do .NET</h2>
+            <p>
+                Programas C# são executados no .NET, um sistema de execução virtual chamado CLR (Common Language Runtime) e um conjunto de bibliotecas de classes. O CLR é a implementação pela Microsoft da CLI (Common Language Infrastructure), um padrão internacional. A CLI é a base para criar ambientes de execução e desenvolvimento nos quais as linguagens e bibliotecas funcionam em conjunto perfeitamente.
+
+                O código-fonte escrito em C# é compilado em uma [IL (linguagem intermediária)](https://learn.microsoft.com/pt-br/dotnet/standard/managed-code) que está em conformidade com a especificação da CLI. O código IL e os recursos, como bitmaps e cadeias de caracteres, são armazenados em um assembly, normalmente com uma extensão de *.dll*. Um assembly contém um manifesto que fornece informações sobre os tipos, a versão e a cultura.
+
+                Quando o programa C# é executado, o assembly é carregado no CLR. Em seguida, o CLR executará a compilação JIT (Just-In-Time) para converter o código de IL em instruções nativas da máquina. O CLR também oferece outros serviços relacionados à coleta automática de lixo, tratamento de exceções e gerenciamento de recursos. O código que é executado pelo CLR é, às vezes, chamado de "código gerenciado". "Código não gerenciado" é compilado em linguagem de máquina nativa e visa uma plataforma específica.
+            </p>
+        </div>
+
+        <div class="col-4 text-start bg-primary text-white p-4 m-2">
+            <h2>Tipos C#</h2>
+            <ul>
+                <li>
+                    Tipos de valor:
+                    <ul>
+                        <li>Tipos simples
+                            <ul>
+                                <li>
+                                    Integral com sinal:: sbyte, short, int, long
+                                </li>
+                                <li>
+                                    Integral sem sinal:: byte, ushort, uint, ulong
+                                </li>
+                                <li>
+                                    Caracteres Unicode: char, que representa uma unidade de código UTF-16
+                                </li>
+                                <li>
+                                    Ponto flutuante binário de IEEE: float, double
+                                </li>
+                                <li>
+                                    Ponto flutuante decimal de alta precisão: decimal
+                                </li>
+                                <li>
+                                    Booliano: bool, que representa valores boolianos — valores que são true ou false
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Tipos enum
+                    <ul>
+                        <li>
+                            Tipos definidos pelo usuário do formulário enum E {...}. Um tipo enum é um tipo distinto com constantes nomeadas. Cada tipo enum tem um tipo subjacente, que deve ser um dos oito tipos integrais. O conjunto de valores de um tipo enum é o mesmo que o conjunto de valores do tipo subjacente.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Tipos Struct
+                    <ul>
+                        <li>
+                            Tipos definidos pelo usuário do formulário struct S {...}
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Tipos de valor anuláveis
+                    <ul>
+                        <li>
+                            Extensões de todos os outros tipos de valor com um valor null
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Tipos de valor de tupla
+                    <ul>
+                        <li>
+                            Tipos definidos pelo usuário do formulário (T1, T2, ...)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
